@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Répertoire de données — Inès Rondeau</title>
+  <meta name="description" content="Étude de cas : Répertoire de données UX au Pôle UX & Change TF1.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="reveal.js"></script>
+</head>
+<body data-screen-label="05 Projet 4 — Répertoire de données" data-theme="green">
+
+  <header class="page">
+    <nav class="nav" aria-label="Principale">
+      <a href="index.html" class="nav__brand">Inès Rondeau</a>
+      <div class="nav__links">
+        <span class="nav__group">
+          <button type="button" class="nav__trigger" aria-haspopup="true" aria-expanded="false" aria-current="page">
+            Projets
+            <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1.5 3.5 L5 7 L8.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav__dropdown" role="menu">
+            <a href="projet-1-portail-info.html" role="menuitem">Portail info</a>
+            <a href="projet-2-jade.html" role="menuitem">Jade +</a>
+            <a href="projet-3-msc.html" role="menuitem">Media Supply Chain</a>
+            <a href="projet-4-repertoire-donnees.html" role="menuitem" aria-current="page">Répertoire de données</a>
+          </div>
+        </span>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="project-hero theme-green" aria-labelledby="p-title">
+      <div class="project-hero__decor" aria-hidden="true"></div>
+      <div class="project-hero__grid">
+        <div>
+          <h1 id="p-title">Répertoire de données</h1>
+          <p class="project-hero__lead">
+            Transformer la recherche silotée en un patrimoine de connaissances partagé,
+            actionnable et pérenne.
+          </p>
+          <div class="project-hero__tags">
+            <span class="tag-hero">Phase de découverte</span>
+            <span class="tag-hero">Phase de recherche</span>
+            <span class="tag-hero">Conception</span>
+            <span class="tag-hero">Développement</span>
+            <span class="tag-hero">Atomic research</span>
+            <span class="tag-hero">Mesure de satisfaction</span>
+            <span class="tag-hero">Amélioration continue</span>
+          </div>
+        </div>
+        <div class="project-hero__image">
+          <img src="assets/repository-hero-new.png" alt="Aperçu du répertoire de données — table Insight Jade dans Confluence">
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== EN UN COUP D'ŒIL ========================= -->
+    <section class="glance reveal" aria-labelledby="glance-title">
+      <div>
+        <div class="glance__eyebrow">En un coup d'œil</div>
+        <h2 id="glance-title" class="glance__title">Un répertoire de données UX pour mutualiser la connaissance de recherche</h2>
+        <p class="glance__lead">
+          Structurer la recherche utilisateur : centraliser les études, harmoniser la méthode
+          (Atomic Research), faciliter le croisement des insights — avec les contraintes d'un
+          outil interne (Confluence).
+        </p>
+        <a class="cta" href="#contexte">
+          Lire l'étude de cas
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="5 12 12 19 19 12"/></svg>
+        </a>
+      </div>
+
+      <div class="glance__grid">
+        <div>
+          <div class="glance__label">Mon rôle</div>
+          <div class="glance__value">Pilotage en binôme — vision, audit, conception, déploiement, accompagnement.</div>
+        </div>
+        <div>
+          <div class="glance__label">Durée &amp; équipe</div>
+          <div class="glance__value">Pôle UX &amp; Change · 1 lead UX, 5 designers seniors, 2 juniors, 1 chargé(e) du changement.</div>
+        </div>
+
+        <div>
+          <div class="glance__label">Méthodes</div>
+          <div class="tag-row">
+            <span class="tag">Atelier vision</span>
+            <span class="tag">Audit</span>
+            <span class="tag">Tri de cartes</span>
+            <span class="tag">Atomic research</span>
+          </div>
+        </div>
+        <div>
+          <div class="glance__label">Livrables</div>
+          <div class="tag-row">
+            <span class="tag">Arborescence Confluence</span>
+            <span class="tag">Template de base de donnée</span>
+            <span class="tag">Plan de déploiement</span>
+            <span class="tag">Accompagnement</span>
+          </div>
+        </div>
+
+        <div class="glance__divider"></div>
+
+        <div>
+          <div class="metric">9</div>
+          <div class="metric__caption">Études intégrées de 3 produits dans Confluence.</div>
+        </div>
+        <div>
+          <div class="metric">+500</div>
+          <div class="metric__caption">Faits intégrés dans le répertoire.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== 01 CONTEXTE ============================== -->
+    <section id="contexte" class="section">
+      <div class="section__head">
+        <div class="num">01</div>
+        <div class="eyebrow">Contexte business &amp; produit</div>
+        <h2>Contexte Business et produit</h2>
+      </div>
+      <div class="section__body">
+        <p>
+          Au sein d'un Pôle UX &amp; Change composé d'1 lead UX, 5 designers seniors, 2 designers
+          juniors et 1 chargé(e) de conduite du changement, la forte croissance du nombre de
+          projets a mis en lumière la nécessité de structurer et d'améliorer la méthodologie
+          de recherche utilisateur.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================== 02 CADRAGE ============================== -->
+    <section class="section section--soft reveal" style="background-color: rgb(255, 255, 255)">
+      <div class="section__head">
+        <div class="num">02</div>
+        <div class="eyebrow">Phase de découverte et de recherche</div>
+        <h2>Cadrage et définition du périmètre d'intervention</h2>
+      </div>
+      <div class="section__body">
+        <div class="grid-2 reveal-stagger">
+          <div class="step step--arrow" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Atelier vision</div>
+              <div class="step__desc">Aligner l'ensemble des membres du pôle sur les objectifs et critères de succès.</div>
+              <div class="step__meta"><span>8 participants (Designers)</span></div>
+            </div>
+          </div>
+          <div class="step step--arrow" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Audit</div>
+              <div class="step__desc">Identification du volume de données à migrer — recensement des études existantes par produit et projets.</div>
+              <div class="step__meta"><span>19 produits</span><span>30 projets</span><span>45 études</span></div>
+            </div>
+          </div>
+          <div class="step step--arrow" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Benchmark</div>
+              <div class="step__desc">Comparer les outils du marché (Dovetail, Maze, Notion…) avant d'arrêter le choix Confluence.</div>
+              <div class="step__meta"><span>7 outils</span></div>
+            </div>
+          </div>
+          <div class="step step--arrow" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Tri de cartes</div>
+              <div class="step__desc">Structuration de l'arborescence Confluence avec les membres de l'équipe.</div>
+              <div class="step__meta"><span>Croisement de 4 versions</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="muted small" style="margin-top:16px">
+          Points d'étapes fixés toutes les 2 semaines pour maintenir la dynamique.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================== 03 PRIORISATION ========================= -->
+    <section class="section reveal">
+      <div class="section__head">
+        <div class="num">03</div>
+        <div class="eyebrow">Enseignements</div>
+        <h2>Priorisation des besoins et problématiques</h2>
+      </div>
+      <div class="section__body">
+        <p>Les ateliers ont mis en exergue 4 points d'attention :</p>
+        <div class="grid-2 reveal-stagger">
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">01</span>
+            <div>
+              <div class="step__desc">Homogénéiser la méthodologie de recherche à l'échelle du pôle.</div>
+            </div>
+          </div>
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">02</span>
+            <div>
+              <div class="step__desc">Centraliser la donnée utilisateur en une référence unique.</div>
+            </div>
+          </div>
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">03</span>
+            <div>
+              <div class="step__desc">Croiser les études pour approfondir la connaissance et améliorer les produits.</div>
+            </div>
+          </div>
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">04</span>
+            <div>
+              <div class="step__desc">Gagner en efficacité et réduire la duplication d'efforts.</div>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:24px; font-weight:700">Contraintes et problématiques</p>
+        <div class="callout callout--pink">
+          <span class="callout__label">Dette d'études importante</span>
+          Comment intégrer une dette d'études importante dans notre répertoire de recherche ?
+        </div>
+        <div class="callout callout--pink">
+          <span class="callout__label">Contrainte budgétaire</span>
+          Pas d'outil dédié possible → choix de Confluence (déjà utilisé) pour limiter les coûts,
+          malgré ses limites (lent, peu automatisable). Migration possible par la suite.
+        </div>
+        <div class="callout callout--pink">
+          <span class="callout__label">Acculturation nécessaire</span>
+          Acculturer toute l'équipe à la méthode Atomic Research — une approche nouvelle pour la
+          plupart des designers.
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== STRUCTURE =============================== -->
+    <section class="section section--soft reveal" style="grid-template-columns: 1fr;">
+      <div>
+        <div class="glance__eyebrow" style="margin-bottom:16px">Structure répertoire de données</div>
+        <div class="gallery gallery--3 gallery--nocrop reveal-stagger">
+          <figure>
+            <img src="assets/repo-structure-01-etude.png" alt="Page Étude — Jade : table de cadrage des études (Test U Planning, Consultation, MVP, recette métiers, retours pilote)">
+            <figcaption>01 — Page Étude</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/repo-structure-02-fact.png" alt="Page Faits — Jade : table des verbatims, expérience, observation, environnement, device, thème et users">
+            <figcaption>02 — Faits</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/repo-structure-03-insight.png" alt="Page Insights — Jade : table des insights croisant facts, hypothèses, expérience et thème">
+            <figcaption>03 — Insights</figcaption>
+          </figure>
+        </div>
+        <p class="muted small" style="margin-top:12px">Base de données Confluence.</p>
+      </div>
+    </section>
+
+    <!-- =================== 04 STRATÉGIE DE DÉPLOIEMENT ============= -->
+    <section class="section reveal">
+      <div class="section__head">
+        <div class="num">04</div>
+        <div class="eyebrow">Déploiement</div>
+        <h2>Stratégie de mise en place progressive</h2>
+      </div>
+      <div class="section__body">
+        <div class="grid-2 reveal-stagger">
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">01</span>
+            <div>
+              <div class="step__title">Découpage en lots</div>
+              <div class="step__desc">Plusieurs lots de données produit — intégration systématique de toutes les nouvelles études à partir d'une date définie.</div>
+            </div>
+          </div>
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">02</span>
+            <div>
+              <div class="step__title">Démonstration</div>
+              <div class="step__desc">Présentation de l'outil auprès du pôle UX &amp; Change et création d'un template dédié dans Confluence.</div>
+            </div>
+          </div>
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">03</span>
+            <div>
+              <div class="step__title">Formation binôme</div>
+              <div class="step__desc">Accompagnement en binôme pour chaque designer sur l'intégration des données et la montée en compétence Atomic Research.</div>
+            </div>
+          </div>
+          <div class="step" style="background-color: rgb(246, 248, 250); border-width: 0px">
+            <span class="step__num">04</span>
+            <div>
+              <div class="step__title">Autonomie complète</div>
+              <div class="step__desc">Tous les membres formés et autonomes — intégration systématique dans les nouvelles études.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== ATELIERS UX =========================== -->
+    <section class="section section--soft reveal" style="grid-template-columns: 1fr;">
+      <div>
+        <div class="glance__eyebrow" style="margin-bottom:16px">Ateliers UX</div>
+        <div class="ateliers-repo-lines reveal-stagger">
+
+          <!-- Ligne 1 — Roadmap -->
+          <div class="ateliers-repo-line ateliers-repo-line--1">
+            <figure>
+              <img src="assets/repo-ateliers-01-roadmap.jpg" alt="Roadmap du projet repository — découpage par phases : précadrage, cadrage, conception, développement, run">
+              <figcaption>01 — Roadmap</figcaption>
+            </figure>
+          </div>
+
+          <!-- Ligne 2 — Atelier vision (4 livrables) -->
+          <div class="ateliers-repo-line ateliers-repo-line--4">
+            <figure>
+              <img src="assets/repo-ateliers-02-vision-1.jpeg" alt="Atelier vision — Besoins et irritants (cartographie des acteurs et méthodes)">
+              <figcaption>02 — Atelier vision · Besoins et irritants — cartographie</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/repo-ateliers-02-vision-2.jpg" alt="Atelier vision — Besoins et irritants (centralisation, gain de temps, recherche)">
+              <figcaption>02 — Atelier vision · Besoins et irritants — synthèse</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/repo-ateliers-02-vision-3.jpg" alt="Atelier vision — Enjeux pour l'équipe UX & Change : base unique, cohérence de méthode, transmission">
+              <figcaption>02 — Atelier vision · Enjeux pour l'équipe UX &amp; Change</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/repo-ateliers-02-vision-4.jpg" alt="Atelier vision — Proposition de valeur du repository : base centrale, gain de temps, méthode partagée">
+              <figcaption>02 — Atelier vision · Proposition de valeur</figcaption>
+            </figure>
+          </div>
+
+          <!-- Ligne 3 — Arborescence (4 livrables) -->
+          <div class="ateliers-repo-line ateliers-repo-line--4">
+            <figure>
+              <img src="assets/repo-ateliers-04-arbo-1.jpg" alt="Arborescence Confluence — acteurs concernés (métiers, UX, conduite du changement)">
+              <figcaption>03 — Arborescence · Acteurs</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/repo-ateliers-04-arbo-2.jpg" alt="Arborescence Confluence — exploration USER 3 : structure produit, outils, tests U, mesures">
+              <figcaption>03 — Arborescence · User 3</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/repo-ateliers-04-arbo-3.jpg" alt="Arborescence Confluence — exploration USER 4 : pôle produit, ateliers, tags et URLs">
+              <figcaption>03 — Arborescence · User 4</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/repo-ateliers-04-arbo-4.jpg" alt="Arborescence Confluence — exploration USER 2 : pôle produit, exploration, tests U, maquettes, mesure d'usage">
+              <figcaption>03 — Arborescence · User 2</figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== 05 RÉSULTATS ============================ -->
+    <section class="section reveal">
+      <div class="section__head">
+        <div class="num">05</div>
+        <div class="eyebrow">Résultats</div>
+        <h2>Résultats</h2>
+      </div>
+      <div class="section__body">
+        <p>Tous les membres de l'équipe UX formés et autonomes sur la méthode.</p>
+        <div class="metrics reveal-stagger">
+          <div class="metric-card metric-card--highlight">
+            <div class="metric">+500</div>
+            <div class="metric__caption">Faits Atomic Research documentés et croisables.</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric">9</div>
+            <div class="metric__caption">Études de 3 produits intégrées dans le repository.</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric">8</div>
+            <div class="metric__caption">Designers formés à l'Atomic Research.</div>
+          </div>
+        </div>
+        <div class="callout callout--green" style="margin-top:16px">
+          <span class="callout__label">Constat</span>
+          Au quotidien, le repository est difficile à entretenir et nécessite de l'énergie. Dans
+          un contexte multi-produits, le faire vivre à court terme reste un défi identifié —
+          piste d'amélioration : migration vers un outil plus adapté (Dovetail, Notion).
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== APPRENTISSAGE =========================== -->
+    <section class="section reveal">
+      <div class="section__head">
+        <div class="eyebrow">Apprentissage</div>
+        <h2>Ce que j'ai appris</h2>
+      </div>
+      <div class="section__body">
+        <div class="grid-2 reveal-stagger">
+          <div class="step step--arrow" style="background-color: rgb(229, 238, 237); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Piloter un projet de bout en bout</div>
+              <div class="step__desc">De la prise de besoin au déploiement, en structurant la roadmap et l'accompagnement.</div>
+            </div>
+          </div>
+          <div class="step step--arrow" style="background-color: rgb(229, 238, 237); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Apprendre et transmettre</div>
+              <div class="step__desc">Montée en compétence sur l'Atomic Research et partage de la méthode avec mes pairs.</div>
+            </div>
+          </div>
+          <div class="step step--arrow" style="background-color: rgb(229, 238, 237); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Gérer les contraintes budgétaires</div>
+              <div class="step__desc">Et trouver des solutions pragmatiques sans compromettre la qualité méthodologique.</div>
+            </div>
+          </div>
+          <div class="step step--arrow" style="background-color: rgb(229, 238, 237); border-width: 0px">
+            <span class="step__num"></span>
+            <div>
+              <div class="step__title">Anticiper la durabilité d'un dispositif</div>
+              <div class="step__desc">La maintenance long terme est un critère de conception à part entière.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PROJECT NAV ============================= -->
+    <nav class="project-nav reveal" aria-label="Navigation entre projets">
+      <a href="projet-3-msc.html">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Projet précédent
+      </a>
+      <a href="index.html">
+        Retour à l'accueil
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </nav>
+
+  </main>
+
+  <!-- =================== FOOTER ===================================== -->
+  <footer class="footer reveal" id="contact">
+    <div class="footer__inner">
+      <div>
+        <h2 class="footer__title">On se parle ?</h2>
+        <p class="footer__lead">
+          Je suis ouverte aux opportunités à Montréal dès août — produit, design system,
+          recherche utilisateur, IA appliquée au design.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer__heading">Me contacter</h3>
+        <ul class="footer__list">
+          <li><a href="mailto:rondeau.id@gmail.com">rondeau.id@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/in%C3%A8s-rondeau-173500bb/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="cv-ines-rondeau.html">Télécharger le CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__heading">Mes projets</h3>
+        <ul class="footer__list">
+          <li><a href="projet-1-portail-info.html">Portail info</a></li>
+          <li><a href="projet-2-jade.html">Jade +</a></li>
+          <li><a href="projet-3-msc.html">Media Supply Chain — Bandes-annonces</a></li>
+          <li><a href="projet-4-repertoire-donnees.html" aria-current="page">Répertoire de données</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
