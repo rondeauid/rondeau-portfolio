@@ -46,7 +46,6 @@
       <p class="hero-home__subtitle">
         <span class="mark">UX &amp; UI / Product Designer senior</span> — 7 ans d'expérience
       </p>
-      <p class="hero-home__line" style="color: rgb(246, 248, 250)"><span style="color: #6C668A">Je viens d'obtenir mon PVT et je m'installe à Montréal pour une durée indéterminée.</span></p>
 
       <div class="hero-home__links" role="list">
         <a class="chip" href="mailto:rondeau.id@gmail.com" role="listitem">rondeau.id@gmail.com</a>
@@ -230,6 +229,25 @@
       </div>
     </footer>
   </main>
+
+  <script>
+    /* Safety net: the hero uses a CSS entrance animation that animates only
+       TO the visible state. In a bundled/offline build the animation timeline
+       can desync and leave the hero stuck at opacity:0. This guarantees the
+       hero becomes visible. On the live site the animation completes (~1.7s)
+       well before this fires, so the opacity check makes it a no-op. */
+    (function () {
+      function ensureHeroVisible() {
+        document.querySelectorAll('.hero-home > *, .project-hero__grid > *').forEach(function (el) {
+          if (parseFloat(getComputedStyle(el).opacity) < 1) {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+          }
+        });
+      }
+      [2000, 3500, 5000].forEach(function (t) { setTimeout(ensureHeroVisible, t); });
+    })();
+  </script>
 
 </body>
 </html>
